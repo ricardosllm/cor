@@ -2,5 +2,10 @@
 redis:
   image: redis
   ports:
-- "6379:6379"
+    - "6379:6379"
 
+---
+dynamodb:
+  image: ricardosllm/aws-dynamodb-local
+  ports:
+    - "18000:8000"
